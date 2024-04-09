@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtNameHeroSize">18sp</dimen>
+    <dimen name="itemHeight">110dp</dimen>
+    <dimen name="commonMargin">16dp</dimen>
+    <dimen name="imgListSize">72dp</dimen>
+    <dimen name="mediumMargin">8dp</dimen>
+    <dimen name="txtDescriptionSize">12sp</dimen>
+    <dimen name="txtNameHeroSizeDetail">32sp</dimen>
+    <dimen name="dividerSize">1dp</dimen>
+    <dimen name="extraLargeMargin">100dp</dimen>
+</resources>

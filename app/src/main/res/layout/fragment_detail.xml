@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background">
+
+        <ImageView
+            android:id="@+id/imgSpiderman"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/spiderman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnBack"
+            app:layout_constraintTop_toBottomOf="@id/vDividerBottom"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgWolverine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/wolverine"
+            app:layout_constraintStart_toEndOf="@id/btnBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vDividerBottom"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgHero"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginHorizontal="@dimen/commonMargin"
+            android:layout_marginTop="@dimen/extraLargeMargin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHeroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="asdasdasdadadsasdsad"
+            android:fontFamily="@font/protest_revolution_regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtNameHeroSizeDetail"
+            android:textStyle="bold"
+            android:layout_marginVertical="@dimen/commonMargin"
+            app:layout_constraintStart_toStartOf="@id/vDividerTop"
+            app:layout_constraintEnd_toEndOf="@id/vDividerTop"
+            app:layout_constraintTop_toBottomOf="@id/imgHero" />
+
+        <View
+            android:id="@+id/vDividerTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/commonMargin"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tvHeroName" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="asdasdasd asdsadasd asdasd asd asdsa asas assa  asdas asdasd"
+            android:textSize="@dimen/txtNameHeroSize"
+            android:layout_margin="@dimen/commonMargin"
+            app:layout_constraintStart_toStartOf="@id/vDividerTop"
+            app:layout_constraintEnd_toEndOf="@id/vDividerTop"
+            app:layout_constraintTop_toBottomOf="@id/vDividerTop" />
+
+        <View
+            android:id="@+id/vDividerBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/commonMargin"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBack"
+            android:textColor="@color/white"
+            android:background="@drawable/item_shape"
+            android:layout_marginBottom="@dimen/commonMargin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

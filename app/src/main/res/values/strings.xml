@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RetrofitMarvel</string>
+    <string name="btnBack">Volver</string>
+    <string name="pictureExplanantion">Imagen de marvel</string>
+</resources>

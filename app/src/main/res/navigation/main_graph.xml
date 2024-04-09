@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.retrofitmarvel.ui.list_fragment.ListFragment"
+        android:label="ListFragment">
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.retrofitmarvel.ui.detail_fragment.DetailFragment"
+        android:label="DetailFragment">
+        <argument
+            android:name="img"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="No hay descripción disponible para este personaje" />
+        <action
+            android:id="@+id/action_detailFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+</navigation>
